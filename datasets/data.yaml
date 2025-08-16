@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 6
+names: ['Bus', 'Car', 'Motor Cycle', 'Person', 'Rickshaw', 'Truck']
+
+roboflow:
+  workspace: ziauddin-university
+  project: vehicle-detection-y7ocl
+  version: 13
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/ziauddin-university/vehicle-detection-y7ocl/dataset/13
