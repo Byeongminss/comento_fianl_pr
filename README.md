@@ -8,7 +8,7 @@
 클래스: ['Bus', 'Car', 'Motor Cycle', 'Person', 'Rickshaw', 'Truck']
 
 train.py: 
-model = YOLO("yolov8n.pt") 코드를 이용해서 YOLOv8 모델을 사용, 전체 데이터셋을 20번을 반복해 학습, 이미지 크기는 640으로 설정
+model = YOLO("yolov8n.pt") 코드를 이용해서 YOLOv8 모델을 사용, 전체 데이터셋을 20번을 반복해 학습, 학습 이미지 크기는 640으로 설정
 
 detection.py: 
 
