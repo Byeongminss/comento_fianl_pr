@@ -12,28 +12,28 @@ model = YOLO("yolov8n.pt") 코드를 이용해서 YOLOv8 모델을 사용, 전�
 
 detection.py: 
 
-counts = {}
+ counts = {}
 
-for result in results:
+ for result in results:
    
-    for box in result.boxes:
+     for box in result.boxes:
        
-        label = result.names[int(box.cls[0])]
+         label = result.names[int(box.cls[0])]
        
-        counts[label] = counts.get(label, 0) + 1
+         counts[label] = counts.get(label, 0) + 1
 
 위의 코드를 이용해서 각 클래스 별 개수를 센다
 
 
-y_offset = 30
+ y_offset = 30
 
-for label, count in counts.items():
+ for label, count in counts.items():
     
-    text = f"{label}: {count}"
+     text = f"{label}: {count}"
    
-    cv2.putText(annotated_image, text, (10, y_offset), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 0), 2)
+     cv2.putText(annotated_image, text, (10, y_offset), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 0), 2)
    
-    y_offset += 30
+     y_offset += 30
 
 위의 코드를 이용해서 텍스트로 개수를 출력한다
 
